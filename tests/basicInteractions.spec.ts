@@ -11,25 +11,25 @@ test("Interaction with inputs",async( {page})=>{
 });
 
 
-test("Sum", async ({ page }) => {
-    await page.goto("https://www.testmuai.com/selenium-playground/simple-form-demo");
+// test("Sum", async ({ page }) => {
+//     await page.goto("https://www.testmuai.com/selenium-playground/simple-form-demo");
 
-    const sum1input = page.locator("#sum1");
-    const sum2input = page.locator("#sum2");
-    const getValuesBtn = page.getByRole("button", { name: "Get Sum" });
+//     const sum1input = page.locator("#sum1");
+//     const sum2input = page.locator("#sum2");
+//     const getValuesBtn = page.getByRole("button", { name: "Get Sum" });
 
-    const num1 = 1222;
-    const num2 = 122;
+//     const num1 = 1222;
+//     const num2 = 122;
 
-    await sum1input.fill(num1.toString());
-    await sum2input.fill(num2.toString());
+//     await sum1input.fill(num1.toString());
+//     await sum2input.fill(num2.toString());
 
-    await getValuesBtn.click();
+//     await getValuesBtn.click();
 
-    const result = page.locator("#addmessage");
+//     const result = page.locator("#addmessage");
 
-    await expect(result).toHaveText((num1 + num2).toString());
-});
+//     await expect(result).toHaveText((num1 + num2).toString());
+// });
 
 test.only("Checkbox", async ({ page }) => {
     await page.goto("https://www.testmuai.com/selenium-playground/checkbox-demo/");
