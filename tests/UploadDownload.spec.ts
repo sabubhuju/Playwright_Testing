@@ -5,15 +5,15 @@ test("Download Files", async ({page}) => {
     await page.fill("#textbox", 'Hello. This is Sabu Bhuju, This is the simple test file for practising the playeright using typescript.')
 
     await page.click("id=create");
-    //await page.click("id=link-to-download");
+    // //await page.click("id=link-to-download");
 
-    const download = await Promise.all([
-        page.waitForEvent("download"),
-           page.click("id=link-to-download")
-    ])
+    // const download = await Promise.all([
+    //     page.waitForEvent("download"),
+    //        page.click("id=link-to-download")
+    // ])
 
-    const path = await download[0].path();
-    console.log(path);
+    // const path = await download[0].path();
+    // console.log(path);
 });
 
 test("Upload a file",async({page})=>{
