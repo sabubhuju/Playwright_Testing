@@ -19,7 +19,7 @@ test('Dropdown Component Tests', async ({page}) => {
   ])
 });
 
-test.only("Bootstrap Dropdown", async ({page}) => {
+test("Bootstrap Dropdown", async ({page}) => {
     await page.goto("https://www.testmuai.com/selenium-playground/jquery-dropdown-search-demo/");
 
     // await page.click("#country+span");

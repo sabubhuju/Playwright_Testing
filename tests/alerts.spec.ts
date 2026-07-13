@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.only('Modal Alert', async ({ page }) => {
+test('Modal Alert', async ({ page }) => {
   await page.goto(
     'https://www.testmuai.com/selenium-playground/bootstrap-modal-demo/',
     { waitUntil: 'networkidle' }

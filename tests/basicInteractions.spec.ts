@@ -31,7 +31,7 @@ test("Interaction with inputs",async( {page})=>{
 //     await expect(result).toHaveText((num1 + num2).toString());
 // });
 
-test.only("Checkbox", async ({ page }) => {
+test("Checkbox", async ({ page }) => {
     await page.goto("https://www.testmuai.com/selenium-playground/checkbox-demo/");
     const checkboxDemo = page.getByLabel("Click on check box"); 
     expect(checkboxDemo).not.toBeChecked();   
