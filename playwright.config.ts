@@ -82,7 +82,7 @@
 import {PlaywrightTestConfig} from '@playwright/test';
 
 const config: PlaywrightTestConfig = { 
-  testMatch: ["tests/dropdown.spec.ts"],
+  testMatch: ["tests/UploadDownload.spec.ts"],
   use: {
     headless: false,
     screenshot: "only-on-failure",
