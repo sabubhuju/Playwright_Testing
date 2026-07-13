@@ -84,7 +84,7 @@ import {PlaywrightTestConfig} from '@playwright/test';
 const config: PlaywrightTestConfig = { 
   testMatch: ["tests/UploadDownload.spec.ts"],
   use: {
-    headless: false,
+    headless: true,
     screenshot: "only-on-failure",
     // video: "retain-on-failure",
 },

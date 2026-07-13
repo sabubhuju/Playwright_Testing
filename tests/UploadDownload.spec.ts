@@ -16,7 +16,7 @@ test("Download Files", async ({page}) => {
     console.log(path);
 });
 
-test.only("Upload a file",async({page})=>{
+test("Upload a file",async({page})=>{
     await page.goto("https://blueimp.github.io/jQuery-File-Upload/");
     // await page.setInputFiles("input[type='file']",
     // ["tests/images/avatar.jpeg", "tests/images/avatar.jpeg"]);
@@ -24,6 +24,7 @@ test.only("Upload a file",async({page})=>{
     const [uplaodFiles] = await Promise.all([
         page.waitForEvent("filechooser"),
         page.click("input[type='file']")
+        
     ])
 
     const isMultiple = uplaodFiles.isMultiple();
